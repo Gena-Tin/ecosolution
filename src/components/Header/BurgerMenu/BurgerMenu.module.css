@@ -1,0 +1,95 @@
+/* BurgerMenu.module.css */
+.backdrop {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(23, 61, 51, 0.25);
+  backdrop-filter: blur(2px);
+}
+.burgerMenu {
+  position: fixed;
+  top: 36px;
+  bottom: 36px;
+  right: 20px;
+  left: 20px;
+  background-color: rgba(23, 61, 51, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px 20px;
+  z-index: 1000;
+  backdrop-filter: blur(12.5px);
+  border-radius: 25px;
+}
+
+.closeButton {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 4px;
+  width: 100%;
+}
+.closeButton:hover {
+  color: #97d28b;
+}
+
+.menu {
+  padding-top: 16px;
+}
+
+.menuItem {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.menuItem:hover {
+  color: #97d28b;
+}
+
+.socialButtons {
+  margin-top: auto;
+  color: rgb(255, 255, 255);
+}
+.socialButtonsItem :not(last-child) {
+  margin-right: 8px;
+}
+
+.socialButtonsItem:hover {
+  color: #97d28b;
+}
+
+@media (min-width: 480px) {
+  .burgerMenu {
+    padding: 24px 24px 24px 24px;
+    width: 365px;
+    top: 30px;
+    bottom: 30px;
+    right: 100px;
+    left: auto;
+  }
+  .menuItem {
+    color: rgba(151, 210, 139, 0.25);
+    font-size: 24px;
+
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .menuItem:hover {
+    color: rgb(255, 255, 255);
+  }
+  .closeButton:hover {
+    color: rgba(151, 210, 139, 0.25);
+  }
+  .socialButtonsItem:hover {
+    color: rgba(151, 210, 139, 0.25);
+  }
+}
