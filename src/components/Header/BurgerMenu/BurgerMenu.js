@@ -1,10 +1,9 @@
 import React from "react";
 import css from "./BurgerMenu.module.css";
 import { nanoid } from "nanoid";
-import { ReactComponent as IcoInstagram } from "./images/instagram.svg";
-import { ReactComponent as IcoFacebook } from "./images/facebook.svg";
 import { ReactComponent as IcoArrow } from "./images/arrow-right.svg";
 import { ReactComponent as IcoClose } from "./images/icon_close.svg";
+import SocialLinks from "../../SocialLinks/SocialLinks";
 
 const menuItems = [
   { id: "main", label: "Main" },
@@ -14,19 +13,6 @@ const menuItems = [
   { id: "faq", label: "FAQ" },
   { id: "customers", label: "Customers" },
   { id: "contact-us", label: "Contact Us" },
-];
-
-const socialLinks = [
-  {
-    id: "facebook",
-    url: "https://facebook.com/",
-    icon: <IcoFacebook />,
-  },
-  {
-    id: "instagram",
-    url: "https://www.instagram.com/",
-    icon: <IcoInstagram />,
-  },
 ];
 
 function BurgerMenu({ isOpen, onClose }) {
@@ -58,17 +44,7 @@ function BurgerMenu({ isOpen, onClose }) {
           ))}
         </nav>
         <div className={css.socialButtons}>
-          {socialLinks.map((link) => (
-            <a
-              key={nanoid()}
-              className={css.socialButtonsItem}
-              href={link.url}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {link.icon}
-            </a>
-          ))}
+          <SocialLinks />
         </div>
       </div>
     </div>

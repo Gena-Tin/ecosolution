@@ -54,15 +54,9 @@
 }
 
 .socialButtons {
+  width: 56px;
   margin-top: auto;
   color: rgb(255, 255, 255);
-}
-.socialButtonsItem :not(last-child) {
-  margin-right: 8px;
-}
-
-.socialButtonsItem:hover {
-  color: #97d28b;
 }
 
 @media (min-width: 480px) {
@@ -86,9 +80,6 @@
     color: rgb(255, 255, 255);
   }
   .closeButton:hover {
-    color: rgba(151, 210, 139, 0.25);
-  }
-  .socialButtonsItem:hover {
     color: rgba(151, 210, 139, 0.25);
   }
 }

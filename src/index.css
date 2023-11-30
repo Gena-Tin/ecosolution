@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: "Fira Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -14,12 +14,11 @@ code {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 360px;
   margin: 0, auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid var(--greenColor);
 }
 
 @media screen and (min-width: 480px) {
