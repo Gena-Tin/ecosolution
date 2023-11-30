@@ -1,7 +1,11 @@
 import React from "react";
 
 function Electricity() {
-  return <div>Electricity</div>;
+  return (
+    <div id="service" style={{ height: "550px" }}>
+      Electricity
+    </div>
+  );
 }
 
 export default Electricity;

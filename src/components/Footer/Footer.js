@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer>
-      <div>Footer</div>;
+    <footer style={{ height: "550px" }}>
+      <div>Footer</div>
     </footer>
   );
 }

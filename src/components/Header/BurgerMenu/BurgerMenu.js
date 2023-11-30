@@ -1,4 +1,3 @@
-// BurgerMenu.js
 import React from "react";
 import css from "./BurgerMenu.module.css";
 import { nanoid } from "nanoid";

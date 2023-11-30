@@ -1,0 +1,65 @@
+.headerSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 36px;
+  padding-bottom: 146px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.navButtons {
+  display: flex;
+  align-items: center;
+}
+
+.buttonMenu {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #dcefd8;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonMenu:hover {
+  background-color: #97d28b;
+  color: #dcefd8;
+}
+
+.buttonGetInTouch {
+  display: none;
+}
+
+@media (min-width: 698px) {
+  .headerSection {
+    padding-top: 24px;
+    padding-bottom: 200px;
+  }
+
+  .buttonGetInTouch {
+    display: inline-flex;
+    padding: 10px 16px;
+    margin-left: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+    border-radius: 500px;
+    background-color: #97d28b;
+    color: #173d33;
+  }
+
+  .buttonGetInTouch:hover {
+    background-color: #dcefd8;
+  }
+}
