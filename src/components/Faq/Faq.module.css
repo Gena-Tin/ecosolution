@@ -1,5 +1,6 @@
 .faqSection {
   display: flex;
+  position: relative;
   justify-content: center;
   padding-top: 18px;
   padding-bottom: 18px;
@@ -11,4 +12,52 @@
 }
 .accordionContainer {
   width: 342px;
+}
+
+.contactUsContainer {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.contactUsContainer p {
+  color: #173d33;
+  font-size: 18px;
+  font-style: normal;
+  margin-bottom: 12px;
+}
+
+.buttonGContactUs {
+  display: inline-flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+
+  border-radius: 500px;
+  background-color: #97d28b;
+  color: #173d33;
+}
+.buttonGContactUs:hover {
+  background-color: #dcefd8;
+}
+
+@media screen and (min-width: 698px) {
+  .contactUsContainer {
+    position: absolute;
+    left: 55%;
+    bottom: 5%;
+  }
+  .titleContainer {
+    position: absolute;
+    left: 55%;
+    top: -1;
+  }
+}
+@media screen and (min-width: 1280px) {
 }
