@@ -1,0 +1,83 @@
+.customersSection {
+  display: flex;
+  justify-content: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.titleContainer {
+  width: 200px;
+  margin: 0 auto;
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 24px;
+}
+
+.customerCard {
+  background-color: #eaedf1;
+  position: relative;
+  width: 148px;
+  height: 116px;
+  padding: 16px;
+  color: #173d33;
+}
+.customerCard:hover {
+  /* color: #eaedf1; */
+  background-color: #97d28b;
+}
+
+.customerTitle {
+  font-weight: 300;
+}
+.customerImage {
+  position: absolute;
+  width: 70%;
+  top: 46%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 698px) {
+  .content {
+    display: flex;
+    padding-top: 40px;
+  }
+  .customersSection {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .customerCard {
+    width: 159px;
+  }
+  /* .customerCard:not(:last-child) {
+    margin-right: 24px;
+  } */
+}
+
+@media screen and (min-width: 1280px) {
+  .content {
+    display: flex;
+    padding-top: 93px;
+  }
+  .customersSection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .customerCard {
+    width: 274px;
+    height: 136px;
+  }
+  .customerImage {
+    position: absolute;
+    width: 60%;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .customerTitle {
+    font-size: 20px;
+  }
+}

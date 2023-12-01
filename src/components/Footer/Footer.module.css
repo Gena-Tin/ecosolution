@@ -1,6 +1,7 @@
 .footerSection {
   display: flex;
   justify-content: center;
+  padding-top: 18px;
 }
 
 .footerContent {
@@ -66,5 +67,10 @@
   .buttonScrollToMain {
     right: 30px;
     bottom: 95px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footerSection {
+    padding-top: 60px;
   }
 }

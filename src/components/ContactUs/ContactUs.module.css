@@ -2,11 +2,11 @@
   display: flex;
   justify-content: center;
   padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .content {
   padding-top: 24px;
-  padding-bottom: 36px;
 }
 
 @media screen and (min-width: 698px) {
@@ -14,19 +14,19 @@
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
-    padding-bottom: 100px;
   }
   .contactUsSection {
     padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .content {
     padding-top: 120px;
-    padding-bottom: 120px;
   }
   .contactUsSection {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 }

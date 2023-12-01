@@ -1,0 +1,14 @@
+.faqSection {
+  display: flex;
+  justify-content: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.titleContainer {
+  width: 200px;
+  padding-bottom: 24px;
+  /* margin: 0 auto; */
+}
+.accordionContainer {
+  width: 342px;
+}

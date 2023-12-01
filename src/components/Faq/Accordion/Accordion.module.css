@@ -1,0 +1,37 @@
+.accordionSection {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.questionContainer {
+  color: #173d33;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  border-top: 1px solid #97d28b;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.question {
+  font-family: Fira Sans;
+  font-size: 18px;
+}
+
+.questionIco {
+  margin-right: 15px;
+}
+
+.answerContainer {
+  width: 100%;
+  padding-left: 30px;
+  padding-bottom: 16px;
+}
+
+.answer {
+  font-size: 14px;
+  text-align: justify;
+}

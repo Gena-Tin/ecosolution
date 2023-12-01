@@ -1,10 +1,20 @@
 import React from "react";
+import Accordion from "./Accordion/Accordion";
+import css from "./Faq.module.css";
+import SectionTitle from "../CommonComponents/SectionTitle/SectionTitle";
 
 function Faq() {
   return (
-    <div id="faq" style={{ height: "550px" }}>
-      FAQ
-    </div>
+    <section id="faq" className={css.faqSection}>
+      <div className="container">
+        <div className={css.titleContainer}>
+          <SectionTitle title="Frequently Asked Questions" />
+        </div>
+        <div className={css.accordionContainer}>
+          <Accordion />
+        </div>
+      </div>
+    </section>
   );
 }
 
