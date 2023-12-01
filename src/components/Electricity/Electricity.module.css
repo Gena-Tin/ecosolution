@@ -1,0 +1,117 @@
+.electricitySection {
+  display: flex;
+  justify-content: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.titleContainer {
+  width: 290px;
+  margin: 0 auto;
+}
+.content {
+  width: 100%;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.counterBlock {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.counterBlock::before {
+  content: "";
+  position: absolute;
+  top: -70px;
+  bottom: 70px;
+  width: 2px;
+  background-color: #97d28b;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.counterBlock::after {
+  content: "";
+  position: absolute;
+  top: 70px;
+  bottom: -70px;
+  width: 2px;
+  background-color: #97d28b;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.counter {
+  color: #97d28b;
+  font-family: Oswald;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.counterUnits {
+  color: #173d33;
+  font-family: Oswald;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 698px) {
+  .electricitySection {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .content {
+    padding-top: 135px;
+    padding-bottom: 135px;
+  }
+
+  .counter {
+    font-size: 100px;
+    line-height: 100px;
+  }
+  .counterUnits {
+    font-size: 28px;
+  }
+  .counterBlock::before {
+    top: -100px;
+    bottom: 120px;
+  }
+
+  .counterBlock::after {
+    top: 120px;
+    bottom: -100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .electricitySection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .titleContainer {
+    width: 370px;
+    margin: 0 auto;
+  }
+  .content {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .counter {
+    font-size: 164px;
+    line-height: 164px;
+  }
+  .counterUnits {
+    font-size: 48px;
+  }
+  .counterBlock::before {
+    top: -90px;
+    bottom: 170px;
+  }
+
+  .counterBlock::after {
+    top: 170px;
+    bottom: -90px;
+  }
+}
