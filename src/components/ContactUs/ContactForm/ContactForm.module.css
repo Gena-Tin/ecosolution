@@ -8,19 +8,37 @@
 
 .labelStyle {
   color: #173d33;
+  margin-bottom: 8px;
 }
 .inputStyle {
   background-color: #eaedf1;
+  height: 31px;
   border: none;
   border-bottom: 1px solid #97d28b;
+  margin-bottom: 28px;
 }
+.inputStyle::placeholder {
+  font-size: 18px;
+  color: #828382;
+}
+
 .textAreaStyle {
   background-color: #eaedf1;
   height: 124px;
-  /* width: 100px; */
   resize: none;
   border: none;
   border-bottom: 1px solid #97d28b;
+  margin-bottom: 16px;
+}
+.textAreaStyle::placeholder {
+  font-size: 18px;
+  color: #828382;
+}
+
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 .buttonStyle {
   display: flex;
@@ -49,6 +67,17 @@
 
 @media screen and (min-width: 698px) {
   .formSection {
+    width: 342px;
     padding: 36px 24px 36px 24px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .formSection {
+    width: 596px;
+    padding: 48px 48px 48px 48px;
+  }
+  .inputStyle {
+    height: 33px;
   }
 }

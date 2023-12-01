@@ -48,13 +48,14 @@ const ContactForm = () => {
         name="message"
         placeholder="Your message"
       />
-
-      <button className={css.buttonStyle} type="submit">
-        Send
-        <div className={css.arrowCircle}>
-          <IcoArrowRight />
-        </div>
-      </button>
+      <div className={css.buttonContainer}>
+        <button className={css.buttonStyle} type="submit">
+          Send
+          <div className={css.arrowCircle}>
+            <IcoArrowRight />
+          </div>
+        </button>
+      </div>
     </form>
   );
 };

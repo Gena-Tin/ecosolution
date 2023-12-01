@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import BurgerMenu from "./BurgerMenu/BurgerMenu";
 import { ReactComponent as IcoMenu } from "./images/menu.svg";
 import { ReactComponent as IcoGetInTouch } from "./images/ellipse.svg";
-import Logo from "../Logo/Logo";
+import Logo from "../CommonComponents/Logo/Logo";
 
 import css from "./Header.module.css";
 

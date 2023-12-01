@@ -1,7 +1,7 @@
 import React from "react";
-import Logo from "../Logo/Logo";
+import Logo from "../CommonComponents/Logo/Logo";
 import css from "./Footer.module.css";
-import SocialLinks from "../SocialLinks/SocialLinks";
+import SocialLinks from "../CommonComponents/SocialLinks/SocialLinks";
 import { ReactComponent as IcoArrowTop } from "./images/arrow-top.svg";
 
 function Footer() {

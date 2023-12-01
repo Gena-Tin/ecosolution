@@ -3,7 +3,7 @@ import css from "./BurgerMenu.module.css";
 import { nanoid } from "nanoid";
 import { ReactComponent as IcoArrow } from "./images/arrow-right.svg";
 import { ReactComponent as IcoClose } from "./images/icon_close.svg";
-import SocialLinks from "../../SocialLinks/SocialLinks";
+import SocialLinks from "../../CommonComponents/SocialLinks/SocialLinks";
 
 const menuItems = [
   { id: "main", label: "Main" },

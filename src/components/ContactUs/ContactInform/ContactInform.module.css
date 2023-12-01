@@ -1,0 +1,49 @@
+.contactSection {
+  width: 244px;
+  padding-bottom: 12px;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: column;
+}
+.listItem:not(:last-child) {
+  margin-bottom: 24px;
+}
+.itemIco {
+  margin-right: 8px;
+}
+.itemName {
+  color: #173d33;
+  margin-bottom: 8px;
+}
+
+.itemLink {
+  display: flex;
+  align-items: center;
+  color: #173d33;
+  font-size: 18px;
+}
+
+.socialLinksContainer {
+  width: 92px;
+  height: 24px;
+  padding-left: 12px;
+}
+
+@media screen and (min-width: 1280px) {
+  .contactSection {
+    width: 466px;
+    padding-bottom: 12px;
+  }
+  .socialLinksContainer {
+    width: 56px;
+    height: 24px;
+    padding-left: 0px;
+  }
+}
