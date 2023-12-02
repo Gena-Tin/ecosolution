@@ -40,14 +40,14 @@
   transform: translateX(-50%);
 }
 
-@media screen and (min-width: 698px) {
-  .content {
-    display: flex;
-    padding-top: 40px;
-  }
+@media screen and (min-width: 768px) {
   .customersSection {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .content {
+    display: flex;
+    padding-top: 40px;
   }
   .customerCard {
     width: 159px;
@@ -55,13 +55,16 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .content {
-    display: flex;
-    padding-top: 93px;
-  }
   .customersSection {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  .titleContainer {
+    width: 270px;
+  }
+  .content {
+    display: flex;
+    padding-top: 93px;
   }
   .customerCard {
     width: 274px;

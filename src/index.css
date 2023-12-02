@@ -14,7 +14,6 @@ code {
 }
 
 .container {
-  width: 100%;
   max-width: 360px;
   margin: 0, auto;
   padding-left: 15px;
@@ -25,19 +24,21 @@ code {
   .container {
     padding-left: 10px;
     padding-right: 10px;
-    width: 90%;
+    width: 360px;
     max-width: none;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
+    width: 768px;
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
+    width: 1280px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -157,7 +158,7 @@ table {
   border-spacing: 0;
 }
 
-.navLink.active {
+/* .navLink.active {
   color: var(--greenColor);
   stroke: var(--greenColor);
 }
@@ -168,76 +169,10 @@ table {
 
 body.openModal {
   overflow: hidden;
-}
+} */
 
-:root.themeLight {
+:root {
   --whiteColor: #ffffff;
-  --mainTextColor: #173d33;
-  --greenColor: #97d28b;
-  --lightGreenColor: #dcefd8;
-
-  --bgColor: #fafafa;
-  --greyColor: #ececec;
-  --whiteColor: #ffffff;
-  --greyBgColor: #efefef;
-  --blackColor: #000000;
-  --secondaryBlackColor: #22252a;
-  /* --greenColor: #8baa36; */
-  --secondaryGreenColor: #8aa936;
-  --errorColor: #e74a3b;
-  --warningColor: #f6c23e;
-  --successColor: #3cbc81;
-  --titleColor: #001833;
-  --mainTextColor: #3e4462;
-  --secondaryTextColor: #23262a;
-  --greyTextColor: #bdbdbd;
-  --secondaryGreyTextColor: #7e7e7e;
-  --secondaryGreyTextColorTransparent: rgba(126, 126, 126, 0.5);
-  --crossColor: #333333;
-  --inputBg: #d9d9d9;
-  --borderColor: #f0f0f0;
-  --ingridientsBcg: #ebf3d4;
-  --modalBg: #2a2c36;
-  --lineColor: #e0e0e0;
-  --secondaryLineColor: #707070;
-  --countColor: #333333;
-  --countBorder: rgba(51, 51, 51, 0.3);
-  --recipeText: rgba(0, 0, 0, 0.8);
-  --linksHoverColor: #1e1f28;
-  --inputBgWithOpacity: rgba(217, 217, 217, 0.15);
-  --bgScrolbarColorPrimary: #e7e5e5;
-  --bgScrolbarColorSecondary: rgba(217, 217, 217, 0.025);
-  --boxShadow: rgba(0, 0, 0, 0.0314074);
-  --selectContentColor: rgba(0, 0, 0, 0.5);
-
-  /* ========================================== */
-  --textColorForModal: var(--secondaryTextColor);
-  --bgColorForModal: var(--whiteColor);
-  --bgColoForFootrBtn: var(--greenColor);
-  --BgRecipeCard: var(--whiteColor);
-  --ingridientsBcg2: #ebf3d4;
-  --mainTextColor2: #3e4462;
-  --blackColor2: #000000;
-  --whiteToGreenColor: #ffffff;
-  --countBorderToWhite: rgba(51, 51, 51, 0.3);
-  --inheritToWhite: "inherit";
-  --WhiteToInherit: var(--whiteColor);
-
-  --categoriesForDarkToWhite: var(--textColorForModal);
-  --activeFooterLink: var(--greenColor);
-  --borderColorHalf: var(--borderColor);
-  --borderInputBgWithOpacity: "transparent";
-  --secondaryGreyTextColorSix: #7e7e7e;
-  --lineColorDescription: #e0e0e0;
-  --blackColorOpacity: rgba(0, 0, 0, 0.5);
-  --activeGreenToBlack: var(--greenColor);
-  --secondaryTextColorFull: #23262a;
-  --secondaryTextColorForText: #23262a;
-  --followUsSvg: #8baa36;
-  --followUsSvgHover: #000;
-  --closeBtFill: #333333;
-  /* --second-image: url("./assets/images/SearchBackground/image1black.png"); */
-  /* --second-image2: url("./assets/images/SearchBackground/image2black.png"); */
 }
 
 /* .container {
@@ -262,23 +197,4 @@ body.openModal {
     padding-right: 100px;
   }
 }
-
-.greensImg {
-  background-image: url(./assets/images/GreensBcg/kisspng-pasta-spinach-dip-english-muffin-breakfast-sandwic-spinach-5abcc32f2ee473\ 1.png);
-  background-repeat: no-repeat;
-  background-position: left 0 bottom -163px;
-  background-size: 256px 392px;
-}
-
-@media screen and (min-width: 768px) {
-  .greensImg {
-    background-position: left 0 bottom -275px;
-    background-size: 423px 646px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .greensImg {
-    background-position: left 0 bottom -413px;
-    background-size: 558px 852px;
-  }
-} */
+*/

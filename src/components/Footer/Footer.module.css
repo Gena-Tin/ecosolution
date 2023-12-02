@@ -46,7 +46,7 @@
   color: #173d33;
 }
 
-@media screen and (min-width: 698px) {
+@media screen and (min-width: 768px) {
   .contactsBlock {
     flex-direction: row;
   }

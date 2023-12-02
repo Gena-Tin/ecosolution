@@ -15,6 +15,7 @@
   text-transform: uppercase;
   margin-bottom: 24px;
 }
+
 .content {
   gap: 296px;
   padding-bottom: 24px;
@@ -46,11 +47,9 @@
   color: #173d33;
   background-color: rgb(255, 255, 255);
 }
-
 .buttonStyle:hover {
   background-color: #dcefd8;
 }
-
 .arrowCircle {
   width: 32px;
   height: 32px;
@@ -62,6 +61,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .contactsContainer {
   display: flex;
   flex-direction: column;
@@ -72,15 +72,12 @@
   color: #173d33;
   letter-spacing: -0.64px;
 }
-
 .tradeMark {
   display: none;
 }
-
 .heroImg {
-  width: 320px;
+  width: 100%;
   height: 200px;
-  margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("./images/wind-turbine-mob.jpg");
@@ -100,7 +97,6 @@
     gap: 66px;
     padding-bottom: 24px;
   }
-
   .text {
     width: 363px;
   }
@@ -114,28 +110,21 @@
   .contactsContainer {
     flex-direction: row;
     justify-content: space-between;
-    /* gap: 0; */
   }
-
   .contactsContainer > p:nth-child(2) {
     margin-left: 77px;
   }
-
   .heroImg {
     padding-top: 40px;
-    width: 708px;
     height: 348px;
     background-image: url("./images/wind-turbine-tab.jpg");
   }
-
   .tradeMark {
     display: block;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  /* .mainSection {
-  } */
   .titleContainer {
     width: 480px;
   }
@@ -148,7 +137,6 @@
     gap: 296px;
     padding-bottom: 24px;
   }
-
   .text {
     width: 363px;
   }
@@ -158,18 +146,11 @@
   .contactsContainer {
     padding-top: 12px;
   }
-
   .contactsContainer > p:nth-child(2) {
     margin-left: 492px;
   }
-
-  /* .contactsContainer > p:nth-child(3) {
-    margin-left: 167px;
-  } */
-
   .heroImg {
     margin-top: 36px;
-    width: 1240px;
     height: 542px;
     background-image: url("./images/wind-turbine-desk.jpg");
   }

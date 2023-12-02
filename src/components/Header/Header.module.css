@@ -37,7 +37,7 @@
   display: none;
 }
 
-@media screen and (min-width: 698px) {
+@media screen and (min-width: 768px) {
   .headerSection {
     padding-top: 24px;
     padding-bottom: 164px;

@@ -65,7 +65,7 @@
   justify-content: center;
 }
 
-@media screen and (min-width: 698px) {
+@media screen and (min-width: 768px) {
   .formSection {
     width: 342px;
     padding: 36px 24px 36px 24px;

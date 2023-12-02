@@ -1,0 +1,56 @@
+.aboutSection {
+  display: flex;
+  justify-content: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.aboutSectionHeader {
+  position: relative;
+}
+.titleContainer {
+  width: 225px;
+}
+.textContainer {
+  margin-top: 24px;
+}
+.text {
+  color: #173d33;
+  text-align: justify;
+  letter-spacing: -0.64px;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutSection {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .aboutSectionHeader {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .textContainer {
+    margin-top: 0px;
+
+    width: 342px;
+  }
+  .textContainer::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    border: solid 1px #97d28b;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .aboutSection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .titleContainer {
+    width: 295px;
+  }
+  .textContainer {
+    width: 459px;
+  }
+}

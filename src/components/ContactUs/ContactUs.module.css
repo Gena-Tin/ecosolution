@@ -9,7 +9,7 @@
   padding-top: 24px;
 }
 
-@media screen and (min-width: 698px) {
+@media screen and (min-width: 768px) {
   .content {
     display: flex;
     justify-content: space-between;
