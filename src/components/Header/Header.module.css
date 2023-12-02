@@ -1,13 +1,13 @@
 .headerSection {
   display: flex;
   justify-content: center;
+  padding-bottom: 146px;
 }
 .headerContent {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 36px;
-  padding-bottom: 146px;
 }
 
 .navButtons {
@@ -40,7 +40,7 @@
 @media screen and (min-width: 698px) {
   .headerSection {
     padding-top: 24px;
-    padding-bottom: 200px;
+    padding-bottom: 164px;
   }
 
   .buttonGetInTouch {
@@ -61,5 +61,11 @@
 
   .buttonGetInTouch:hover {
     background-color: #dcefd8;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .headerSection {
+    padding-top: 24px;
+    padding-bottom: 200px;
   }
 }

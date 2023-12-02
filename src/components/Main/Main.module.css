@@ -1,0 +1,176 @@
+.mainSection {
+  display: flex;
+  justify-content: center;
+}
+
+.titleContainer {
+  width: 270px;
+}
+.title {
+  color: #173d33;
+  font-family: Oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.content {
+  gap: 296px;
+  padding-bottom: 24px;
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+.text {
+  color: #173d33;
+  letter-spacing: -0.64px;
+}
+.buttonContainer {
+  width: 100%;
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+.buttonStyle {
+  display: flex;
+  height: 39px;
+  width: 141px;
+  padding: 4px 4px 4px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 500px;
+  border: 1px solid #97d28b;
+  color: #173d33;
+  background-color: rgb(255, 255, 255);
+}
+
+.buttonStyle:hover {
+  background-color: #dcefd8;
+}
+
+.arrowCircle {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: #97d28b;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 36px;
+  border-top: 1px solid #97d28b;
+  color: #173d33;
+  letter-spacing: -0.64px;
+}
+
+.tradeMark {
+  display: none;
+}
+
+.heroImg {
+  width: 320px;
+  height: 200px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./images/wind-turbine-mob.jpg");
+}
+
+@media screen and (min-width: 768px) {
+  .titleContainer {
+    width: 230px;
+  }
+  .title {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 0px;
+  }
+  .content {
+    display: flex;
+    gap: 66px;
+    padding-bottom: 24px;
+  }
+
+  .text {
+    width: 363px;
+  }
+  .buttonContainer {
+    width: 100%;
+    margin-top: 43px;
+
+    display: flex;
+    justify-content: flex-start;
+  }
+  .contactsContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 0; */
+  }
+
+  .contactsContainer > p:nth-child(2) {
+    margin-left: 77px;
+  }
+
+  .heroImg {
+    padding-top: 40px;
+    width: 708px;
+    height: 348px;
+    background-image: url("./images/wind-turbine-tab.jpg");
+  }
+
+  .tradeMark {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  /* .mainSection {
+  } */
+  .titleContainer {
+    width: 480px;
+  }
+  .title {
+    font-size: 64px;
+    line-height: 64px;
+    margin-bottom: 0px;
+  }
+  .content {
+    gap: 296px;
+    padding-bottom: 24px;
+  }
+
+  .text {
+    width: 363px;
+  }
+  .buttonContainer {
+    margin-top: 20px;
+  }
+  .contactsContainer {
+    padding-top: 12px;
+  }
+
+  .contactsContainer > p:nth-child(2) {
+    margin-left: 492px;
+  }
+
+  /* .contactsContainer > p:nth-child(3) {
+    margin-left: 167px;
+  } */
+
+  .heroImg {
+    margin-top: 36px;
+    width: 1240px;
+    height: 542px;
+    background-image: url("./images/wind-turbine-desk.jpg");
+  }
+}

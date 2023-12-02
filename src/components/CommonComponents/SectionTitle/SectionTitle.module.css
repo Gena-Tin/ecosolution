@@ -7,8 +7,15 @@
   line-height: 36px;
   text-transform: uppercase;
 }
-@media screen and (min-width: 1280px) {
+
+@media screen and (min-width: 768px) {
   .title {
     font-size: 36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .title {
+    font-size: 48px;
+    line-height: 48px;
   }
 }
