@@ -8,13 +8,13 @@
 .titleContainer {
   width: 355px;
 }
+
 .controlContainer {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-/* .controlCounterBlock {
-} */
+
 .controlCounter {
   color: rgba(23, 61, 51, 0.25);
   font-size: 28px;
@@ -24,15 +24,13 @@
 .controlCounter span:nth-child(1) {
   color: #173d33;
 }
-/* .controlCounter {
-} */
-/* .controlCounterBlock {
-} */
+
 .controlButtonsBlock {
   display: flex;
   justify-content: space-between;
   width: 144px;
 }
+
 .controlButton {
   display: flex;
   justify-content: center;
@@ -43,67 +41,13 @@
   border: 1px solid #173d33;
   cursor: pointer;
 }
+
 .controlButton:hover {
   background-color: #97d28b;
 }
+
 .content {
   padding-top: 19px;
-}
-/* .card {
-} */
-.cardImage {
-  width: 320px;
-  height: 146px;
-  overflow: hidden;
-}
-.cardImage img {
-  object-fit: cover;
-  width: 100%;
-}
-.cardTextBlock {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #eaedf1;
-  width: 320px;
-  height: 146px;
-  padding: 21px 12px 12px 12px;
-}
-.cardTitleBlock {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 21px;
-}
-.cardTitle {
-  width: 175px;
-  color: #173d33;
-  text-align: justify;
-  font-size: 18px;
-  letter-spacing: -0.72px;
-}
-.cardButton {
-  width: 60px;
-  height: 60px;
-  border-radius: 100px;
-  background-color: #97d28b;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.cardButton:hover {
-  background-color: #dcefd8;
-  border: solid 1px #97d28b;
-}
-.cardDescriptionBlock {
-  border-top: solid 1px #97d28b;
-  padding-top: 12px;
-  display: flex;
-  justify-content: space-between;
-
-  color: #173d33;
-  font-size: 12px;
-  letter-spacing: -0.48px;
 }
 
 @media screen and (min-width: 768px) {
@@ -127,31 +71,8 @@
   .controlContainer {
     width: 343px;
   }
-
   .content {
     padding-top: 38px;
-  }
-  .cardImage {
-    width: 342px;
-    height: 146px;
-  }
-  .cardTextBlock {
-    width: 342px;
-    height: 150px;
-    padding: 21px 12px 12px 12px;
-  }
-  .cardTitleBlock {
-    padding-bottom: 16px;
-  }
-  .cardTitle {
-    width: 194px;
-    font-size: 20px;
-    letter-spacing: -0.8px;
-  }
-  .cardDescriptionBlock {
-    font-size: 14px;
-    letter-spacing: -0.56px;
-    padding-top: 12px;
   }
 }
 
@@ -172,30 +93,5 @@
   }
   .content {
     padding-top: 120px;
-  }
-  .cardImage {
-    width: 596px;
-    height: 208px;
-  }
-
-  .cardTextBlock {
-    width: 596px;
-    height: 208px;
-    padding: 36px 48px 36px 48px;
-  }
-  .cardTitleBlock {
-    padding-bottom: 16px;
-  }
-  .cardTitle {
-    width: 357px;
-    font-size: 24px;
-
-    letter-spacing: -0.96px;
-  }
-  .cardDescriptionBlock {
-    padding-top: 24px;
-    font-size: 16px;
-
-    letter-spacing: -0.64px;
   }
 }
