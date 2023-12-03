@@ -40,6 +40,7 @@
   .textContainer::before {
     content: "";
     position: absolute;
+    z-index: -1;
     height: 100%;
     left: 50%;
     border: solid 1px #97d28b;

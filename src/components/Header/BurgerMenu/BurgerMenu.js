@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import css from "./BurgerMenu.module.css";
 import { nanoid } from "nanoid";
 import { ReactComponent as IcoArrow } from "./images/arrow-right.svg";
@@ -16,6 +16,18 @@ const menuItems = [
 ];
 
 function BurgerMenu({ isOpen, onClose }) {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   const scrollToSection = (sectionId) => {

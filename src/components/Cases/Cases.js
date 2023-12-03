@@ -52,36 +52,36 @@ const slides = [
   },
 ];
 
+const swiperSettings = {
+  spaceBetween: 24,
+  slidesPerView: 1,
+  loop: true,
+  initialSlide: 0,
+  speed: 500,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    1280: {
+      slidesPerView: 2,
+      spaceBetween: 48,
+    },
+  },
+  navigation: {
+    nextEl: ".swiperNextBtn",
+    prevEl: ".swiperPrevBtn",
+  },
+  a11y: {
+    prevSlideMessage: "Previous slide",
+    nextSlideMessage: "Next slide",
+  },
+};
+
 function Cases() {
   const swiperRef = useRef(null);
   const [slideNumber, setSlideNumber] = useState(1);
-
-  const settings = {
-    spaceBetween: 24,
-    slidesPerView: 1,
-    loop: true,
-    initialSlide: 0,
-    speed: 500,
-
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 24,
-      },
-      1280: {
-        slidesPerView: 2,
-        spaceBetween: 48,
-      },
-    },
-    navigation: {
-      nextEl: ".swiperNextBtn",
-      prevEl: ".swiperPrevBtn",
-    },
-    a11y: {
-      prevSlideMessage: "Previous slide",
-      nextSlideMessage: "Next slide",
-    },
-  };
 
   const handleSlideChange = () => {
     if (swiperRef.current) {
@@ -99,7 +99,7 @@ function Cases() {
             <div className={css.controlCounterBlock}>
               <div className={css.controlCounter}>
                 <span>{`${slideNumber.toString().padStart(2, 0)}`}</span>
-                <span>/ {`${slides.length.toString().padStart(2, 0)}`}</span>
+                <span> / {`${slides.length.toString().padStart(2, 0)}`}</span>
               </div>
             </div>
             <div className={css.controlButtonsBlock}>
@@ -116,7 +116,7 @@ function Cases() {
           <Swiper
             ref={swiperRef}
             onSlideChange={handleSlideChange}
-            {...settings}
+            {...swiperSettings}
           >
             {slides.map((slide, index) => (
               <SwiperSlide key={index}>
