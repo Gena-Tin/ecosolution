@@ -1,6 +1,7 @@
 import React from "react";
 import SectionTitle from "../CommonComponents/SectionTitle/SectionTitle";
 import css from "./About.module.css";
+import Values from "./Values/Values";
 
 function About() {
   return (
@@ -21,7 +22,9 @@ function About() {
           </div>
         </div>
 
-        <div className={css.content}></div>
+        <div className={css.content}>
+          <Values />
+        </div>
       </div>
     </section>
   );

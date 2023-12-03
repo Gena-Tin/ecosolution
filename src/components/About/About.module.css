@@ -18,6 +18,9 @@
   text-align: justify;
   letter-spacing: -0.64px;
 }
+.content {
+  padding-top: 36px;
+}
 
 @media screen and (min-width: 768px) {
   .aboutSection {
@@ -41,6 +44,9 @@
     left: 50%;
     border: solid 1px #97d28b;
   }
+  .content {
+    padding-top: 100px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .aboutSection {
@@ -52,5 +58,8 @@
   }
   .textContainer {
     width: 459px;
+  }
+  .content {
+    padding-top: 122px;
   }
 }
