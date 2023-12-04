@@ -10,16 +10,31 @@
   color: #173d33;
   margin-bottom: 8px;
 }
+.inputContainer {
+  position: relative;
+  margin-bottom: 20px;
+}
 .inputStyle {
   background-color: #eaedf1;
+  width: 100%;
   height: 31px;
   border: none;
   border-bottom: 1px solid #97d28b;
   margin-bottom: 28px;
+  outline: none;
 }
 .inputStyle::placeholder {
   font-size: 18px;
   color: #828382;
+}
+.inputStyle.error {
+  border-color: tomato;
+}
+.errorMessage {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  color: tomato;
 }
 
 .textAreaStyle {
@@ -29,6 +44,7 @@
   border: none;
   border-bottom: 1px solid #97d28b;
   margin-bottom: 16px;
+  outline: none;
 }
 .textAreaStyle::placeholder {
   font-size: 18px;
